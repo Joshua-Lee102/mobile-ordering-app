@@ -1,0 +1,255 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 600px;
+    max-height: 1161px;
+    font-family: Smythe;
+    font-weight: 400;
+} 
+
+header{
+    background-image: url("/images/burger.jpg");
+    width: 600px;
+}
+
+#title, #title-subtext{
+    display: block;
+    color: #FFF;
+}
+
+#title{
+    font-size: 39px;
+    margin:0 375px 0 45px;
+    padding: 30px 0 5px 0; 
+}
+
+#title-subtext{
+    font-size: 22px;
+    margin: 0 275px 0 45px;
+    padding: 0 0 60px 0; 
+}
+
+.main-menu-container{
+    display: flex;
+    align-items: center;
+}
+
+.menuItem{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    margin:0 auto 10px auto;
+    width: 500px;
+    
+}
+
+.menu-item-left{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 30px;
+}
+
+#menu-item-emoji{
+    font-size: 70px;
+}
+
+#menu-item-name {
+    color: #000;
+    font-size: 28px;
+    margin-bottom: 0px; 
+}
+
+#menu-item-ingredients {
+    color: #8B8B8B;
+    font-size: 16px;
+    margin: 10px 0;  
+}
+
+#menu-item-price {
+    color: #000;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.add-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    margin-left: auto;
+}
+
+.add-icon {
+    width: 32px;
+    height: 32px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#main-container{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:0px;
+}
+
+#order-title{
+    text-align: center;
+    margin: 20px auto 40px auto;
+}
+
+#order-title, #order-item, #order-quantity,#total-price-title{
+    font-size: 28px;
+    line-height: 60%;
+}
+
+#body-container{
+    display:flex;
+}
+
+#order-item{
+    margin-bottom: 0px;
+    
+}
+
+#item-btn-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    
+}
+
+#remove-btn{
+    flex-direction: column;
+    color: #BBB;
+    font-family: Verdana;
+    font-size: 10px;
+    line-height: 200%;
+    background: white;
+    border: none;
+    cursor: pointer;
+    margin: 27px 0 0 5px;
+    
+}
+
+#remove-btn:focus{
+    outline: 0;
+    box-shadow: none; 
+}
+
+#order-price{
+    margin-top: 10px;
+    margin-bottom:0px;
+}
+
+
+#order-quantity{
+    font-size:20px;
+    width: 500px;
+    padding: 0 0 10px 0;
+    margin: 0 0 10px 0;
+    display:flex;
+    justify-content: flex-end;
+}
+
+#total-price-container{
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+    border-top: black solid 2px;
+    
+}
+
+#total-price{
+    font-size: 20px;
+    
+}
+
+#complete-order-btn{
+    width: 500px;
+    padding: 18px 175px 18px 194px;
+    margin: 30px 0;
+    border-radius: 3px;
+    background: #16DB99;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    border:none;
+    color: var(--white, #FFF);
+    font-family: Verdana;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#card-popup-container{
+    display: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin:auto;
+    width: 525px;
+    height: 550px;
+    background: #FFF;
+    border: 2px solid black;
+    text-align: center;
+}
+
+#pay-header-text{
+    color: #000;
+    font-family: Verdana;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31.119px;
+    margin: 30px auto;
+}
+
+.card-input-field{
+    width: 475px;
+    height: 65px;
+    border-radius: 4px;
+    border: 1.297px solid #757575;
+    margin: 11px 0 ;
+    padding-left: 10px;
+    color: #757575;
+    font-family: Verdana;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 31.119px;
+}
+
+#pay-btn{
+    width: 485px;
+    height: 75px;
+    background: #16DB99;
+    color: var(--white, #FFF);
+    font-family: Verdana;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 31.119px; /* 155.596% */
+    border:none;
+    margin: 35px auto;
+    border-radius: 4px;
+}
+
+#confirmation-message{
+    color: #065F46;
+    font-family: Smythe;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.8px;
+    border-radius: 3px;
+    background: #ECFDF5;
+    margin: 30px auto;
+    padding: 52px 60px 52px 66px; 
+}
